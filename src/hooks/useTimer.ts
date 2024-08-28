@@ -1,9 +1,7 @@
 import { Dispatch, SetStateAction, useEffect } from 'react'
-
 interface QuizDetails {
   totalTime: number
 }
-
 const useTimer = (
   timer: number,
   quizDetails: QuizDetails,
