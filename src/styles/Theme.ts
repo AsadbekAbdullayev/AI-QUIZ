@@ -1,5 +1,4 @@
 import { Theme } from './styled'
-
 export const themes: Record<string, Theme> = {
   light: {
     colors: {
