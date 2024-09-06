@@ -34,11 +34,9 @@ const QuizDetailsScreen = () => {
   const { setCurrentScreen, quizDetails } = useQuiz()
 
   const { selectedQuizTopic, totalQuestions, totalScore, totalTime } = quizDetails
-
   const goToQuestionScreen = () => {
     setCurrentScreen(ScreenTypes.QuestionScreen)
   }
-
   return (
     <PageCenter light justifyCenter>
       <CenterCardContainer>
