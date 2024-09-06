@@ -9,7 +9,6 @@ import {
 } from '../../styles/Global'
 import { ScreenTypes } from '../../types'
 import { convertSeconds } from '../../utils/helpers'
-
 import Button from '../ui/Button'
 import Logo from '../../assets/images/logo.png'
 
