@@ -11,7 +11,6 @@ import { ScreenTypes } from '../../types'
 import { convertSeconds } from '../../utils/helpers'
 import Button from '../ui/Button'
 import Logo from '../../assets/images/logo.png'
-
 const AppTitle = styled.h2`
   font-weight: 700;
   font-size: 32px;
