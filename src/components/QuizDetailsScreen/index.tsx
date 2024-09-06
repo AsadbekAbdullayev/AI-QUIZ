@@ -32,7 +32,6 @@ const DetailText = styled.p`
 `
 const QuizDetailsScreen = () => {
   const { setCurrentScreen, quizDetails } = useQuiz()
-
   const { selectedQuizTopic, totalQuestions, totalScore, totalTime } = quizDetails
   const goToQuestionScreen = () => {
     setCurrentScreen(ScreenTypes.QuestionScreen)
