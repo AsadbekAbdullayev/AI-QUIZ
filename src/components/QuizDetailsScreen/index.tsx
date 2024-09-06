@@ -30,7 +30,6 @@ const DetailText = styled.p`
   margin-top: 15px;
   line-height: 1.3;
 `
-
 const QuizDetailsScreen = () => {
   const { setCurrentScreen, quizDetails } = useQuiz()
 
