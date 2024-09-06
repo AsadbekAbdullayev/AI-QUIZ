@@ -16,7 +16,6 @@ const AppTitle = styled.h2`
   font-size: 32px;
   color: ${({ theme }) => theme.colors.themeColor};
 `
-
 const DetailTextContainer = styled.div`
   font-size: 20px;
   font-weight: 500;
