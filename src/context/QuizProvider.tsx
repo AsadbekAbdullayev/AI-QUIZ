@@ -2,11 +2,9 @@ import { ReactNode, useEffect, useState } from 'react'
 import { quiz } from '../data/QuizQuestions'
 import { QuizContextTypes, Result, ScreenTypes } from '../types'
 import { QuizContext, initialState } from './QuizContext'
-
 type QuizProviderProps = {
   children: ReactNode
 }
-
 const QuizProvider = ({ children }: QuizProviderProps) => {
   const [timer, setTimer] = useState<number>(initialState.timer)
   const [endTime, setEndTime] = useState<number>(initialState.endTime)
