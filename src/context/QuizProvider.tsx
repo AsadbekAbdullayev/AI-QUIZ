@@ -13,9 +13,7 @@ const QuizProvider = ({ children }: QuizProviderProps) => {
   const [currentScreen, setCurrentScreen] = useState<ScreenTypes>(
     initialState.currentScreen
   )
-
   const [questions, setQuestions] = useState(quiz[initialState.quizTopic].questions)
-
   const {
     questions: quizQuestions,
     totalQuestions,
