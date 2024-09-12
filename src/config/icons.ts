@@ -7,4 +7,5 @@ import { ReactComponent as StartIcon } from '../assets/icons/start.svg'
 import { ReactComponent as Sun } from '../assets/icons/sun.svg'
 import { ReactComponent as Moon } from '../assets/icons/moon.svg'
 
+
 export { AppLogo, CheckIcon, Next, Refresh, TimerIcon, StartIcon, Sun, Moon }
