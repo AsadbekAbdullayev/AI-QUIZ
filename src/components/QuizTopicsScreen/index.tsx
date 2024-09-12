@@ -18,14 +18,12 @@ const Heading = styled.h2`
   margin-bottom: 20px;
   text-align: center;
 `
-
 const DetailText = styled.p`
   font-weight: 500;
   font-size: 20px;
   line-height: 29px;
   text-align: center;
 `
-
 const SelectButtonContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
