@@ -38,12 +38,10 @@ const SelectButtonContainer = styled.div`
     max-width: 100%;
   }
 `
-
 interface SelectButtonProps {
   active: boolean
   disabled?: boolean
 }
-
 const SelectButton = styled.div<SelectButtonProps>`
   background-color: ${({ disabled, theme }) =>
     disabled ? `${theme.colors.disabledCard}` : `${theme.colors.selectTopicBg}`};
