@@ -9,7 +9,6 @@ import { ReactComponent as Laravel } from '../assets/icons/laravel.svg'
 import { ReactComponent as Python } from '../assets/icons/python.svg'
 import { ReactComponent as ReactIcon } from '../assets/icons/react.svg'
 import { ReactComponent as BulbIcon } from '../assets/icons/bulb.svg'
-
 type QuizTopic = {
   title: string
   icon: ReactNode
