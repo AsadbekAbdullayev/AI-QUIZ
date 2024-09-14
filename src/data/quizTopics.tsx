@@ -14,7 +14,6 @@ type QuizTopic = {
   icon: ReactNode
   disabled?: boolean
 }
-
 export const quizTopics: QuizTopic[] = [
   {
     title: 'React',
