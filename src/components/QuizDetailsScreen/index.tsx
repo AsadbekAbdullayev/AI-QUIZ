@@ -24,6 +24,7 @@ const DetailTextContainer = styled.div`
   text-align: center;
   max-width: 500px;
 `
+
 const DetailText = styled.p`
   font-size: 20px;
   font-weight: 500;
