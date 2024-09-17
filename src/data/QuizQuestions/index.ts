@@ -10,7 +10,6 @@ import { react } from './react'
 
 type Choice = string
 type CorrectAnswers = string[]
-
 export type Question = {
   question: string
   choices: Choice[]
@@ -20,7 +19,6 @@ export type Question = {
   code?: string
   image?: string
 }
-
 export type Topic = {
   topic: string
   level: string
