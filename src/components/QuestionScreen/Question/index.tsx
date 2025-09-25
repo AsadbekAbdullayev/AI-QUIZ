@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-
 import { device } from '../../../styles/BreakPoints'
 
 import CodeSnippet from '../../ui/CodeSnippet'
@@ -8,8 +7,7 @@ import Answer from '../Answer'
 import QuizImage from '../../ui/QuizImage'
 
 const QuestionContainer = styled.div`
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin: 30px 0 40px;
   max-width: 88%;
   @media ${device.sm} {
     max-width: 100%;
@@ -35,10 +33,13 @@ interface QuestionTypes {
   question: string
   code?: string
   image?: string
-  type: string
+  type: 'single' | 'multiple'
   choices: string[]
-  selectedAnswer: string[]
-  handleAnswerSelection: (e: React.ChangeEvent<HTMLInputElement>, index: number) => void
+  selectedAnswer: string[] | string
+  handleAnswerSelection: (
+    e: React.ChangeEvent<HTMLInputElement>,
+    index: number
+  ) => void
 }
 
 const Question: FC<QuestionTypes> = ({
@@ -53,16 +54,17 @@ const Question: FC<QuestionTypes> = ({
   return (
     <QuestionContainer>
       <QuestionStyle>{question}</QuestionStyle>
-      {/* if question contains code snippet then show code */}
-      {code && <CodeSnippet code={code} language="javascript" />}
-      {/* if question contains an image */}
-      {image && <QuizImage image={image} />}
+
+      {code ? <CodeSnippet code={code} language="javascript" /> : null}
+
+      {image ? <QuizImage image={image} /> : null}
+
       <AnswersContainer>
         {choices.map((choice, index) => (
           <Answer
+            key={`${choice}-${index}`}
             choice={choice}
             index={index}
-            key={index}
             onChange={(e) => handleAnswerSelection(e, index)}
             type={type}
             selectedAnswer={selectedAnswer}
